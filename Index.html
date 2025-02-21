@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es_ES">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Web Renfe">
+    <meta property="og:description" content="Web Renfe">
+    <meta property="og:image" content="https://www.renfe.com/imagenes/renfe-logo.png">
+    <meta property="og:url" content="https://www.renfe.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Web Renfe">
+    <meta property="og:locale" content="es_ES">
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-image: url(https://abogadosenlinea.net/wp-content/uploads/2022/07/logotipo-renfe.jpg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: black;
+            padding: 10px;
+            height: 125px;
+        }
+
+        nav {
+            background-color: #EAEAEA;
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+            padding: 10px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: black;
+            margin: 10px;
+        }
+
+        nav :hover {
+            color: #CE2B5D;
+        }
+
+        section {
+            margin: 20px;
+            text-align: center;
+            border-radius: 1px solid black;
+        }
+
+        .compra {
+            border: 1px solid black;
+            margin-bottom: 15px;
+            padding: -150px;
+        }
+
+        .origen {
+            margin-bottom: 45px;
+            text-align: center;
+        }
+
+        .origen:hover {
+            margin-bottom: 45px;
+            text-align: center;
+            cursor: pointer;
+
+        }
+
+        .destino {
+            margin-bottom: 45px;
+            text-align: center;
+        }
+
+        .destino:hover {
+            margin-bottom: 45px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        .compra {
+            margin-bottom: 45px;
+            text-align: center;
+        }
+
+        .dia {
+            margin-left: 25px;
+        }
+
+        .dia:hover {
+            cursor: pointer;
+        }
+
+        .hora {
+            margin-left: 25px;
+        }
+
+        .hora:hover {
+            cursor: pointer;
+        }
+    </style>
+    <title>Web Renfe</title>
+</head>
+
+<body>
+    <header>
+    </header>
+    <nav style="text-align: center;">
+        <a href="Index.html">Inicio</a>
+        <a href="#">Horarios</a>
+        <a href="#">Compra</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <section>
+        <div>
+            <p>En esta web podrás consultar los horarios de los trenes de Renfe, comprar billetes y ponerte en contacto
+                con nosotros.</p>
+        </div>
+        <section>
+            <div id="origen-destino" class="compra">
+                <section>
+                    <h2>Origen</h2>
+                    <select name="origen" id="origen" class="origen">
+                        <optgroup label="Andalucía">
+                            <option value="sevilla">Sevilla</option>
+                            <option value="cordoba">Córdoba</option>
+                            <option value="malaga">Málaga</option>
+                            <option value="granada">Granada</option>
+                            <option value="cadiz">Cádiz</option>
+                            <option value="huelva">Huelva</option>
+                            <option value="almeria">Almería</option>
+                            <option value="jaen">Jaén</option>
+                        </optgroup>
+                        <optgroup label="Aragón">
+                            <option value="zaragoza">Zaragoza</option>
+                            <option value="huesca">Huesca</option>
+                            <option value="teruel">Teruel</option>
+                        </optgroup>
+                        <optgroup label="Asturias">
+                            <option value="oviedo">Oviedo</option>
+                            <option value="gijon">Gijón</option>
+                            <option value="aviles">Avilés</option>
+                        </optgroup>
+                        <optgroup label="Islas Baleares">
+                            <option value="palma">Palma</option>
+                        </optgroup>
+                        <optgroup label="Canarias">
+                            <option value="santa-cruz-de-tenerife">Santa Cruz de Tenerife</option>
+                            <option value="las-palmas-de-gran-canaria">Las Palmas de Gran Canaria</option>
+                        </optgroup>
+                        <optgroup label="Cantabria">
+                            <option value="santander">Santander</option>
+                        </optgroup>
+                        <optgroup label="Castilla-La Mancha">
+                            <option value="toledo">Toledo</option>
+                            <option value="ciudad-real">Ciudad Real</option>
+                            <option value="cuenca">Cuenca</option>
+                            <option value="guadalajara">Guadalajara</option>
+                            <option value="albacete">Albacete</option>
+                        </optgroup>
+                    </select>
+                    <input type="datetime-local" class="hora">
+                    <h2>Destino</h2>
+                    <select id="destino" class="destino">
+                        <optgroup label="Andalucía">
+                            <option value="sevilla">Sevilla</option>
+                            <option value="cordoba">Córdoba</option>
+                            <option value="malaga">Málaga</option>
+                            <option value="granada">Granada</option>
+                            <option value="cadiz">Cádiz</option>
+                            <option value="huelva">Huelva</option>
+                            <option value="almeria">Almería</option>
+                            <option value="jaen">Jaén</option>
+                        </optgroup>
+                        <optgroup label="Aragón">
+                            <option value="zaragoza">Zaragoza</option>
+                            <option value="huesca">Huesca</option>
+                            <option value="teruel">Teruel</option>
+                        </optgroup>
+                        <optgroup label="Asturias">
+                            <option value="oviedo">Oviedo</option>
+                            <option value="gijon">Gijón</option>
+                            <option value="aviles">Avilés</option>
+                        </optgroup>
+                        <optgroup label="Islas Baleares">
+                            <option value="palma">Palma</option>
+                        </optgroup>
+                        <optgroup label="Canarias">
+                            <option value="santa-cruz-de-tenerife">Santa Cruz de Tenerife</option>
+                            <option value="las-palmas-de-gran-canaria">Las Palmas de Gran Canaria</option>
+                        </optgroup>
+                        <optgroup label="Cantabria">
+                            <option value="santander">Santander</option>
+                        </optgroup>
+                        <optgroup label="Castilla-La Mancha">
+                            <option value="toledo">Toledo</option>
+                            <option value="ciudad-real">Ciudad Real</option>
+                            <option value="cuenca">Cuenca</option>
+                            <option value="guadalajara">Guadalajara</option>
+                            <option value="albacete">Albacete</option>
+                        </optgroup>
+                        <input type="datetime-local" class="hora">
+                    </select>
+                    <section>
+                        <select>
+                            <optgroup>
+                                <option value="select">Seleccione el numero de pasajeros</option>
+                                <option value="1 Adulto">1 Adulto 👲 </option>
+                                <option value="2 Adulto">2 Adultos 🤼 </option>
+                                <option value="1 niño">1 Niño 👶 </option>
+                                <option value="2 niños">2 Niños 👶👶</option>
+                                <option value="1 jubilado">1 Jubilado 👴🚧👷 </option>
+                            </optgroup>
+                        </select>
+
+                    </section>
+                    <section>
+                        <a href="billetes.html" target="_blank">
+                            <button type="button">Comprar Billetes</button>
+                        </a>
+                    </section>
+                </section>
+            </div>
+        </section>
+</body>
+
+</html>
